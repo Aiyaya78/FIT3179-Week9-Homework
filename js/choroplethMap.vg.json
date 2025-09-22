@@ -6,7 +6,7 @@
             "anchor": "middle"       
           },
   "width": "container",
-  "height": 600,
+  "height": 500,
   "autosize": {"type": "fit", "contains": "padding"},
   "projection": { "type": "equalEarth" },
 
