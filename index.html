@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Voter Turnout by State in Malaysia’s 15th General Election (2022)</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="page">
+    <div id="choropleth_map"></div>
+  </main>
+
+  <script>
+    const specUrl = "js/choroplethMap.vg.json";
+    vegaEmbed('#choropleth_map', specUrl, { actions: false, renderer: "canvas" })
+      .catch(console.error);
+  </script>
+</body>
+</html>

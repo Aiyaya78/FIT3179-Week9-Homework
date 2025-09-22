@@ -1,0 +1,26 @@
+/* Reset a bit */
+html, body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: #222;
+}
+
+/* Page wrapper (optional) */
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Visualization container */
+#choropleth_map {
+  width: min(96vw, 1100px);   /* responsive width, capped */
+  min-height: 420px;          /* keeps it visible while loading */
+  margin: 0 auto;             /* centers the div */
+  display: block;
+}
+
+/* Optional: make the canvas/SVG fill the container width */
+.vega-embed, .vega-embed > * {
+  width: 100% !important;
+}
