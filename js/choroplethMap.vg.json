@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
             "text": "Voter Turnout by State in Malaysia’s 15th General Election (2022)",
-            "fontSize": 25,          
+            "fontSize": {"expr": "clamp(16, width/40, 22)"},          
             "anchor": "middle"       
           },
   "width": "container",
