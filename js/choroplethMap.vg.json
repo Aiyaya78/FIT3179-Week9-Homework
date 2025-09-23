@@ -67,7 +67,10 @@
         "format": { "type": "topojson", "feature": "ne_10m_admin_1_states_provinces" }
       },
       "transform": [
-        { "filter": "datum.properties.adm0_a3 == 'MYS'" }
+        { "filter": "datum.properties.adm0_a3 == 'MYS'" },
+        {
+          "filter": "!(datum.properties.name == 'Labuan' || datum.properties.name == 'Putrajaya' || datum.properties.name == 'Kuala Lumpur')"
+        }
       ],
       "mark": { "type": "text", "fontSize": 10, "fontWeight": "normal" },
       "encoding": {
